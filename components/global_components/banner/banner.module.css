@@ -1,0 +1,74 @@
+.slider .slide {
+  background-color: #ffe115;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slider .slide .info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+.slider .slide .info p:first-child {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.slider .slide .info .price {
+  color: #2d3a4b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+}
+.slider .slide .info h3 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.slider .slide .info .btn {
+  background-color: #2d3a4b;
+  color: white;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 10px 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.slider .slide .info .btn:hover {
+  background-color: #38485c;
+}
+
+.slider .slide .img {
+  width: 400px;
+}
+.slider .slide .img Image {
+  max-width: 100%;
+}
+
+@media (max-width: 890px) {
+  .slider .slide .info h3 {
+    font-size: 50px;
+  }
+
+  .slider .slide .img {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .slider .slide .info {
+    align-items: center;
+    text-align: center;
+  }
+  .slider .slide .img {
+    display: none;
+  }
+}

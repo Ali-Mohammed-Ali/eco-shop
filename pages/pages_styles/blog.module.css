@@ -1,0 +1,38 @@
+.product_banner {
+  background-color: #ffdf14;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.product_banner .product_title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 10px 30px;
+}
+.product_banner p {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 20px 20px;
+  width: 300px;
+}
+.product_banner .path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3a4b;
+  padding: 10px 30px;
+  border-radius: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+.product_banner .path .arrow_icon {
+  margin: 0 10px;
+}

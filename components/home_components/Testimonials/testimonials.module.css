@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px;
+  gap: 20px;
+  flex-wrap: wrap-reverse;
+  border-bottom: 1px solid #2d3a4b;
+  padding-bottom: 50px;
+}
+.container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.container .info .icon {
+  width: 40px;
+}
+.container .info .icon img {
+  max-width: 100%;
+}
+.container .info p {
+  text-align: end;
+  font-family: "Playfair Display", serif;
+  color: #666666;
+}
+.container .info h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #2d3a4b;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+}
+
+.container .img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .img img {
+  max-width: 100%;
+}

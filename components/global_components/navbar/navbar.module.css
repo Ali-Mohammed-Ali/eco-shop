@@ -1,0 +1,149 @@
+.navbarContainer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.logo {
+  cursor: pointer;
+  width: 200px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.links .pageLinks {
+  list-style: none;
+  display: flex;
+}
+.links .pageLinks li {
+  padding-right: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2d3a4b;
+  position: relative;
+  z-index: 1000;
+}
+.links .pageLinks li::before {
+  content: " ";
+  position: absolute;
+  background-color: #ffdf14;
+  width: 0%;
+  height: 2px;
+  bottom: 8px;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.links .pageLinks li:hover::before {
+  width: 80%;
+}
+.links .pageLinks .active::before {
+  content: " ";
+  position: absolute;
+  background-color: #ffdf14;
+  width: 65%;
+  height: 2px;
+  bottom: 8px;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.links .buttons {
+  list-style: none;
+  display: flex;
+}
+.links .buttons li {
+  padding-right: 20px;
+}
+
+.links .buttons .cart {
+  position: relative;
+}
+.links .buttons .cart::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "2";
+  position: absolute;
+  background-color: #ffdf14;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: -5px;
+  right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #2d3a4b;
+  font-size: 10px;
+}
+.menu {
+  display: none;
+}
+.menuIcon {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .logo {
+    width: 150px;
+    margin-left: 20px;
+  }
+  .logo .logoImage {
+    max-width: 100%;
+  }
+  .links .pageLinks {
+    display: none;
+  }
+  .menuIcon {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    position: relative;
+  }
+  .menuIcon .icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .menu .pageLinksMenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 200px;
+    background: #2d3a4b;
+
+    padding: 0 0px 0px 20px;
+  }
+  .pageLinksMenu li {
+    padding-right: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+  }
+  .pageLinksMenu li::after {
+    content: " ";
+    position: absolute;
+    background-color: #ffdf14;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .pageLinksMenu li:hover::after {
+    width: 80%;
+  }
+}

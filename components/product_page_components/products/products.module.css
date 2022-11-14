@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 300px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  position: relative;
+  padding: 40px;
+}
+.container::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffdf14;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.container .action {
+  background-color: #2d3a4b;
+  padding: 10px 20px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.container:hover .action {
+  opacity: 1;
+}
+.container .action .icon {
+  color: white;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.container .action .icon:hover {
+  transform: scale(1.5);
+}
+.container:hover::after {
+  opacity: 0.8;
+}
+.container .img {
+  width: 200px;
+}
+.container .img Image {
+  max-width: 100%;
+}
+.container .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .info .title {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2d3a4b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.container .info .desc {
+  margin: 0;
+  color: #666666;
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+}
+.container .info .price {
+  margin: 0;
+  color: #2d3a4b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.container .discount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ffdf14;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .discount p {
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
